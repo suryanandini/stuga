@@ -1,57 +1,79 @@
-This is [Reverse Google](https://github.com/suryanandini/stuga), a project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Reverse Google 🎯
+Basic Details
+Team Name: Stuga
+Team Members
+Team Lead: Surya Nandini Santhosh- Adi Sankara Institute of Engineering and Technology
+Member 2: Nithin P R-  Adi Sankara Institute of Engineering and Technology
 
-You ask. We ask why you asked. Reverse Google flips the usual search experience — instead of answering your question, it responds with a counter-question that makes you think about why you wanted to know in the first place.
+Project Description
 
-## Getting Started
+Reverse Google is a search engine that refuses to answer your questions. Instead, it throws the question right back at you — forcing you to confront why you even wanted to know in the first place.
 
-First, add your Gemini API key to a `.env.local` file:
+The Problem (that doesn't exist)
+
+Search engines keep giving people answers instantly, robbing humanity of the ancient art of sitting with unresolved curiosity and mild existential doubt.
+
+The Solution (that nobody asked for)
+
+We built an AI that never answers anything. Ask it "Why is the sky blue?" and it fires back "Why do you need to know that?" — in six different personalities, ranging from gentle therapist to unnecessarily rude.
+
+Technical Details
+Technologies/Components Used
+
+For Software:
+
+Languages used: TypeScript, JavaScript
+Frameworks used: Next.js (App Router)
+Libraries used: Tailwind CSS, @google/generative-ai
+Tools used: VS Code, Git, GitHub, Vercel
+Implementation
+For Software:
+
+Installation
+
+bash
+git clone https://github.com/suryanandini/stuga.git
+cd stuga
+npm install
+
+Add a .env.local file with:
 
 GEMINI_API_KEY=your_key_here
 
+Run
 
-Then install dependencies and run the development server:
-
-```bash
-npm install
+bash
 npm run dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 to see it running locally.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Project Documentation
+For Software:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Screenshots
+![alt text](<Screenshot 2026-09-12 070801.png>)
+![alt text](<Screenshot 2026-09-12 070024.png>) 
+![alt text](<Screenshot 2026-09-12 070024-1.png>)
+Project Demo
+Video
 
-## Features
+<video controls src="Screen Recording 2026-09-12 070121.mp4" title="Title"></video>
 
-- Ask any question and get a witty counter-question back
-- Multiple personality modes: Normal, Judgmental, Philosophical, Rude, Therapist, Gen Z
-- Question history tracker
+Demonstrates asking a question in each personality mode and viewing the resulting counter-questions live on the deployed site.
 
-## How It Works
+Additional Demos
 
-1. You type a question into the input box
-2. The question is sent to `/api/reverse`, which calls the Gemini API
-3. Gemini generates a short counter-question based on the selected personality mode
-4. The counter-question is displayed, and added to your question history
+Live deployment: [ADD YOUR ACTUAL VERCEL URL HERE, e.g. https://stuga.vercel.app]
 
-## Roadmap
+Team Contributions
+Surya: Built the Next.js frontend, integrated the Gemini API, handled deployment to Vercel
+[ADD NAME]: [ADD CONTRIBUTION]
+[ADD NAME]: [ADD CONTRIBUTION]
 
-- Uselessness Score — rate how unnecessary your question was
-- Infinite Reverse — keep asking "why" on your own counter-questions
-- Battle Mode — pit two questions against each other to see which is more useless
+Made with 💙 at a hackathon, by Team Stuga
 
-## Learn More
+Content
 
-To learn more about Next.js, take a look at the following resources:
+🔄 Reverse Google — How to implement Basic idea User types: “Why is the sky blue?” Instead of answering, your app generates: “Why are you interested in the sky being blue?” So the flow is: User question → AI analyzes it → AI generates a related counter-question → Display it 🛠️
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+PASTED
