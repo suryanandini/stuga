@@ -1,17 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is [Reverse Google](https://github.com/suryanandini/stuga), a project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+You ask. We ask why you asked. Reverse Google flips the usual search experience — instead of answering your question, it responds with a counter-question that makes you think about why you wanted to know in the first place.
 
 ## Getting Started
 
-First, run the development server:
+First, add your Gemini API key to a `.env.local` file:
+
+GEMINI_API_KEY=your_key_here
+
+
+Then install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -19,6 +21,25 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Features
+
+- Ask any question and get a witty counter-question back
+- Multiple personality modes: Normal, Judgmental, Philosophical, Rude, Therapist, Gen Z
+- Question history tracker
+
+## How It Works
+
+1. You type a question into the input box
+2. The question is sent to `/api/reverse`, which calls the Gemini API
+3. Gemini generates a short counter-question based on the selected personality mode
+4. The counter-question is displayed, and added to your question history
+
+## Roadmap
+
+- Uselessness Score — rate how unnecessary your question was
+- Infinite Reverse — keep asking "why" on your own counter-questions
+- Battle Mode — pit two questions against each other to see which is more useless
 
 ## Learn More
 
